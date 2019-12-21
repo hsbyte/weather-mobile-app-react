@@ -35,4 +35,4 @@ App only works on mobile devices, and works best with Google Chrome, Mozilla Fir
 >Arnold Haban
 
 ## Weather Api
->Weather data from weatherbit.io
+>Weather data from [weatherbit.io](https://www.weatherbit.io/)
