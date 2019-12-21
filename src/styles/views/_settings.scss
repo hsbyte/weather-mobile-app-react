@@ -1,0 +1,108 @@
+.settings {
+    background-color: white;
+    width: 100%;
+    height: auto;
+    overflow-y: auto;
+
+
+    .title,
+    .sub-title {
+        padding: 20px;
+        text-align: center;
+        background-color: $grey-bg-1;
+    }
+
+    .sub-title {
+        padding: 10px;
+        background-color: $grey-bg-3;
+        color: grey;
+        
+        svg {
+            fill: none;
+        }
+    }
+
+    .update-frequency,
+    .contact,
+    .about {
+        
+        .contents {
+            overflow: hidden;
+            transition: max-height .4s ease-in-out;
+            height: auto;
+            max-height: 0;
+            color: grey;
+
+            div {
+                padding: 20px;
+            }
+
+            p {
+                font-size: .85rem;
+            }
+
+            span {
+                font-size: .7rem;
+            }
+        }
+        .contents.expanded {
+            max-height: 100vh;
+        }
+    }
+
+    .qr-code {
+        text-align: center;
+        padding: 3vh;
+
+        h3,
+        p {
+            color: grey;
+        }
+
+        img {
+            max-width: 150px;
+        }
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+
+        li {
+            color: black;
+            padding: 10px 20px;
+            border-bottom: 1px solid $silver-chalice;
+        }
+    }
+
+    .update-frequency {
+        padding-bottom: 0;
+
+        ul {
+            margin: 10px -20px 0 -20px;
+            
+            li {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                
+                &:first-of-type {
+                    border-top: 1px solid $silver-chalice;
+                }
+                &:last-of-type {
+                    border-bottom: none;
+                }
+
+                input {
+                    height: 25px;
+                    width: 25px;
+                }
+            }
+        }
+    }
+
+    .reset {
+        text-align: center;
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,52 @@
+.temperature {
+    width: 88%;
+    margin: 0 auto;
+    text-align: center;
+    border: 1px solid #aaa;
+    color: white;
+    background-color: rgba(51,51,51,.8);
+
+    .title{
+        margin: 0;
+        padding: 10px 20px;
+        background-color: #4f4f4f;
+    }
+
+    .container{
+
+        .col-12 {
+            margin: 0 5px;
+
+            p {
+                background-color: #fa9917;
+                padding: 2px;
+                border: 1px solid transparent;
+                border-radius: 2px;
+                font-size: 3.5vw;
+            }
+        }
+
+        .col-12:first-of-type {
+            background-color: #fa9917;
+            padding: 3%;
+            margin-top: 10px;
+            border: 1px solid transparent;
+            border-radius: 5px;
+            align-self: flex-end;
+
+            p {
+                margin-bottom: 0;
+            }
+
+            h1 {
+                font-size: 8.5vw;
+            }
+        }
+
+        .col-12:last-of-type {
+            p {
+                background-color: #3399ff;
+            }
+        }
+    }
+}

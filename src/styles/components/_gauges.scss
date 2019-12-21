@@ -1,0 +1,62 @@
+.gauges {
+    width: 88%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px auto;
+
+    .humidity,
+    .variations {
+        background-color: $grey-bg-1;
+        padding: 10px 20px;
+        border: 1px solid $silver-chalice;
+        text-align: center;
+    }
+
+    .humidity {
+        width: 35%;
+
+        .value {
+            position: absolute;
+            margin: auto;
+        }
+    }
+
+    .variations {
+        width:60%;
+
+        p {
+            background-color: #3399ff;
+            padding: 2px;
+            border: 1px solid transparent;
+            border-radius: 2px;
+            font-size: 3.5vw;
+        }
+
+        .precipitation {
+            display: flex;
+            justify-content: space-around;
+
+            p {
+                background-color: transparent;
+                text-align: center;
+            }
+
+            span {
+                font-size: 2.5vw;
+            }
+        }
+    }
+}
+
+.azimuth {
+    .circle {
+        animation: progress 1s ease-out forwards;
+    }
+
+    @keyframes progress {
+        0% {
+            stroke-dasharray: 0 100;
+        }
+    }
+}

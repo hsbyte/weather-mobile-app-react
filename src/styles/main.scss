@@ -1,0 +1,93 @@
+@import 'base/reset';
+@import 'base/typography';
+@import 'grids/ah-column-grid';
+
+html,
+body {
+    color: white;
+    background-color: black;
+    font-family: 'Catamaran', sans-serif;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+// Orientation lock: mobile only
+// @media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) { 
+//   html { 
+//     transform: rotate(-90deg); 
+//     transform-origin: left top;
+//     width: 100vh; 
+//     overflow-x: hidden; 
+//     position: absolute; 
+//     top: 100%; 
+//     left: 0; 
+//   }
+// }
+
+h1,
+h2,
+h6,
+p {
+    font-weight: normal;
+    margin: 0;
+}
+h2 {
+    font-size: 4vw;
+}
+h6 {
+    padding-bottom: 3px;
+}
+
+
+.App {
+    @import 'abstracts/variables';
+    @import 'components/components';
+    @import 'views/views';
+
+    .hero {
+        position: absolute;
+        margin: auto;
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .backdrop {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        // background: linear-gradient(-45deg, $burnt-sienna, $cerise, $curious-blue, $la-palma);
+        // background-image: radial-gradient(circle, #0b2787, #6b1889, #a4007d, #cf0067, #ec0049, #e32f33, #d7461d, #c95800, #a56900, #7d7300, #507900, #007a14);
+        background-image: radial-gradient(circle, #0b2787, #0b2787, #6b1889, #a4007d, #ec0049, #d7461d, #c95800, #a56900, #7d7300, #507900, #007a14, #007a14);
+        background-size: 400% 400%;
+        opacity: .7;
+        pointer-events: none;
+        animation: ani-gradient 15s ease infinite;
+    }
+
+    @-webkit-keyframes ani-gradient {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+    }
+
+    @-moz-keyframes ani-gradient {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+    }
+
+    @keyframes ani-gradient {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+    }
+
+    ul {
+        list-style: none;
+    }
+}

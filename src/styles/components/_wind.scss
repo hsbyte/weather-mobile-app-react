@@ -1,0 +1,44 @@
+.wind {
+    width: 88%;
+    margin: 0 auto;
+    text-align: center;
+    border: 1px solid #aaa;
+    color: white;
+    background-color: rgba(51,51,51,.8);
+
+    .title{
+        margin: 0;
+        padding: 10px 20px;
+        background-color: #4f4f4f;
+    }
+
+    .container {
+        justify-content: space-between;
+        margin: -10px 0 5px 0;
+
+        .col-12 {
+            text-align: left;
+            align-self: flex-start;
+            padding-top: 20px;
+        }
+        .col-12:first-of-type {
+
+            h1 {
+                color: $orange;
+            }
+        }
+        .col-12:nth-of-type(2) {
+            .wind-dir {
+                position: absolute;
+                margin: 50%;
+            }
+        }
+        .col-12:last-of-type {
+            text-align: center;
+
+            p {
+                color: greenyellow;
+            }
+        }
+    }
+}

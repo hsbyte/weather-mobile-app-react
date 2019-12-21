@@ -1,0 +1,32 @@
+// -------------------------------
+// Media screen breakpoints
+// -------------------------------
+$extra-small-screen-up: 321px !default;
+$small-screen-up: 769px !default;
+$medium-screen-up: 993px !default;
+$large-screen-up: 1201px !default;
+
+$small-and-up: "only screen and (min-width : #{$extra-small-screen-up})" !default;
+$medium-and-up: "only screen and (min-width : #{$small-screen-up})" !default;
+$large-and-up: "only screen and (min-width : #{$medium-screen-up})" !default;
+$extra-large-and-up: "only screen and (min-width : #{$large-screen-up})" !default;
+
+.mobile-only {
+    display: none;
+    
+    @media only screen and (max-device-width : 1025px) {
+        display: initial;
+
+        &-hide {
+            display: none;
+        }
+    }
+}
+
+.desktop-only {
+    display: none;
+
+    @media only screen and (min-device-width : 1026px) {
+        display: initial;
+    }
+}

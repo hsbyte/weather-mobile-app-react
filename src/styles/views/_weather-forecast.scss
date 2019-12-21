@@ -1,0 +1,13 @@
+.weather-forecast {
+    background-color: rgba(0, 0, 0, .5);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-top: 50px;
+
+    .day {
+        width: 84%;
+    }
+}

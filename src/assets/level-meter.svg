@@ -1,0 +1,59 @@
+<?xml version="1.0" standalone="yes"?>
+<!-- 
+    Author: Arnold Haban
+    Title: Level Meter Indicator
+    License: MIT 2019 
+-->
+<svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="40" height="78">
+  <style>
+    .mask {
+      stroke: none;
+      fill: url(#grad)
+    }
+    .fill {
+      stroke: none;
+      fill: #fff;
+      width: 100%;
+      height: 6px;
+    }
+    .red-stop-color {
+      stop-color:rgb(255,0,0);
+      stop-opacity:1
+    }
+    .yellow-stop-color {
+      stop-color:rgb(255,255,0);
+      stop-opacity:1
+    }
+    .olive-stop-color {
+      stop-color:rgb(173,255,47);
+      stop-opacity:1
+    }
+    .green-stop-color {
+      stop-color:rgb(42,201,64);
+      stop-opacity:1
+    }
+  </style>
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" class="red-stop-color" />
+      <stop offset="20%" class="yellow-stop-color" />
+      <stop offset="40%" class="olive-stop-color" />
+      <stop offset="100%" class="green-stop-color" />
+    </linearGradient>
+    <mask id="mask">
+      <rect y="0" class="fill" />
+      <rect y="10%" class="fill" />
+      <rect y="20%" class="fill" />
+      <rect y="30%" class="fill" />
+      <rect y="40%" class="fill" />
+      <rect y="50%" class="fill" />
+      <rect y="60%" class="fill" />
+      <rect y="70%" class="fill" />
+      <rect y="80%" class="fill" />
+      <rect y="90%" class="fill" />
+    </mask>
+  </defs>
+  <rect x="0" y="0" width="100%" height="100%" class="mask" style="mask:url(#mask)" />
+  <rect x="0" y="0" width="100%" height="100%" fill="rgb(79,79,79)" style="mask:url(#mask)" />
+  <circle cx="50%" cy="50%" r="25%" stroke="rgba(128,128,128,.9)" stroke-width="2" fill="rgb(51,51,51)" />
+</svg>
