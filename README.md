@@ -25,8 +25,8 @@ Displays weather condition updates for user's current location. Easy navigation 
 * Animated weather icons
 
 ## Hosted
-App is hostedApp only works on mobile devices, and works best with Google Chrome, Mozilla Firefox, Safari, Opera and Microsoft Edge web browsers. 
->Firebase host: [https://weather-mobileapp.web.app](https://weather-moileapp-web.app)
+App only works on mobile devices, and works best with Google Chrome, Mozilla Firefox, Safari, Opera and Microsoft Edge web browsers. 
+>Firebase hosted: [https://weather-mobileapp.web.app](https://weather-moileapp-web.app)
 
 #### Screenshot
 ![](.md/screenshot.png)
