@@ -26,7 +26,7 @@ Displays weather condition updates for user's current location. Easy navigation 
 
 ## Hosted
 App only works on mobile devices, and works best with Google Chrome, Mozilla Firefox, Safari, Opera and Microsoft Edge web browsers. 
->Firebase hosted: [https://weather-mobileapp.web.app](https://weather-mobileapp-web.app)
+>Firebase hosted: [https://weather-mobileapp.web.app](https://weather-mobileapp.web.app)
 
 #### Screenshot
 ![](.md/screenshot.png)
