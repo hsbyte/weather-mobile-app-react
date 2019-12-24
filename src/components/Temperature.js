@@ -8,8 +8,8 @@ export default function Temperature(props) {
             <div className="column-grid container">
                 <div className="row-wrap">
                     <div className="col-12 xl6">
-                        <p>{Math.floor(max_temp)}° | {Math.floor(min_temp)}°</p>
-                        <h1>{Math.floor(temp)}°</h1>
+                        <p>{parseInt(max_temp)}° | {parseInt(min_temp)}°</p>
+                        <h1>{parseInt(temp)}°</h1>
                     </div>
                     <div className="col-12 xl3">
                         <h6>Max Temp</h6>

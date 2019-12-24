@@ -16,8 +16,8 @@ export default function DayWeather({ data }) {
                 <ul className="info">
                     <li>{date[0]}<br />{date[1]}</li>
                     <li><img className="weather-current-icon" src={icon} alt="weather-icon" /></li>
-                    <li>{Math.floor(temp)}<sup>{uom['temp']}</sup></li>
-                    <li>feels like<br />{Math.floor(max_temp)}<sup>{uom['temp']}</sup> / {Math.floor(min_temp)}<sup>{uom['temp']}</sup></li>
+                    <li>{parseInt(temp)}<sup>{uom['temp']}</sup></li>
+                    <li>feels like<br />{parseInt(max_temp)}<sup>{uom['temp']}</sup> / {parseInt(min_temp)}<sup>{uom['temp']}</sup></li>
                 </ul>
                 <div className="other-info">
                     <ul>
